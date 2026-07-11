@@ -1876,3 +1876,180 @@ body {
     margin-top: 28px;
   }
 }
+
+/* ========================================
+   MOBILE ADJUSTMENT
+   ======================================== */
+
+@media screen and (max-width: 600px) {
+
+  /* -------------------------
+     1. 最初の円ナビ
+     ------------------------- */
+
+  .hero {
+    min-height: 100svh;
+    overflow: hidden;
+  }
+
+  .hero .hud {
+    transform: scale(0.50);
+    transform-origin: center center;
+    flex-shrink: 0;
+  }
+
+  /* 円を縮小した分、上下の空白を調整 */
+  .hero .hud-wrapper,
+  .hero .hero-core {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .system-header {
+    padding: 22px 20px;
+  }
+
+  .system-name {
+    font-size: 16px;
+    letter-spacing: 0.32em;
+  }
+
+  .system-sub {
+    font-size: 8px;
+  }
+
+  .system-status {
+    font-size: 8px;
+  }
+
+
+  /* -------------------------
+     2. WEROUM YEONG-SANG
+     ------------------------- */
+
+  .video-service {
+    padding: 55px 18px;
+  }
+
+  .video-service-card {
+    width: 100%;
+    min-height: auto;
+    grid-template-columns: 1fr;
+    border-radius: 12px;
+  }
+
+  .video-copy {
+    padding: 30px 24px;
+  }
+
+  .video-copy h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .service-catch {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .service-author {
+    margin-top: 14px;
+    font-size: 11px;
+  }
+
+  .service-features {
+    margin-top: 22px;
+  }
+
+  .service-features li {
+    padding: 11px 0;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .service-price {
+    margin-top: 22px;
+    font-size: 19px;
+  }
+
+  .service-button {
+    width: 100%;
+    min-height: 50px;
+    margin-top: 18px;
+    font-size: 13px;
+  }
+
+  .video-visual {
+    min-height: 280px;
+    order: -1;
+  }
+
+  .video-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  /* -------------------------
+     3. お問い合わせ
+     ------------------------- */
+
+  .contact-cta {
+    min-height: auto;
+    padding: 65px 20px;
+  }
+
+  .contact-inner {
+    width: 100%;
+    max-width: 420px;
+    padding: 0;
+  }
+
+  .contact-inner h2 {
+    font-size: 27px;
+    line-height: 1.3;
+  }
+
+  .contact-description {
+    max-width: 340px;
+    margin: 18px auto 0;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .contact-button {
+    width: 100%;
+    max-width: 300px;
+    min-height: 50px;
+    margin-top: 26px;
+    font-size: 13px;
+  }
+
+  .contact-note {
+    margin-top: 15px;
+    font-size: 9px;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero .hud {
+    transform: scale(0.49);
+  }
+
+  .video-copy {
+    padding: 26px 20px;
+  }
+
+  .video-copy h2 {
+    font-size: 25px;
+  }
+
+  .contact-inner h2 {
+    font-size: 24px;
+  }
+}
