@@ -2384,11 +2384,7 @@ body {
   }
 }
 
-.company-back{
-    display:block;
-    width:fit-content;
-    margin:70px -10px 0 auto;
-}
+
 
 /* 通常の章 */
 .chapter > .back-top{
