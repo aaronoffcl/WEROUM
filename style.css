@@ -2351,9 +2351,10 @@ body {
   border-bottom-color: var(--yellow);
 }
 
-.company-back {
-  display: inline-block;
-  margin-top: 55px;
+.back-top {
+    display: block;
+    width: fit-content;
+    margin: 70px 0 0 auto;
 }
 
 @media screen and (max-width: 700px) {
