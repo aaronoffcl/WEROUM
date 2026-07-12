@@ -81,9 +81,10 @@ body {
 }
 
 .system-name {
-  color: var(--yellow);
-  font-size: 22px;
-  letter-spacing: 10px;
+    color: var(--yellow);
+    font-size: 22px;
+    letter-spacing: 10px;
+    font-weight: 700;
 }
 
 .system-sub {
@@ -2351,10 +2352,9 @@ body {
   border-bottom-color: var(--yellow);
 }
 
-.back-top {
-    display: block;
-    width: fit-content;
-    margin: 70px 0 0 auto;
+.back-top{
+    display:inline-block;
+    margin-top:60px;
 }
 
 @media screen and (max-width: 700px) {
@@ -2399,4 +2399,10 @@ body {
   .company-back {
     margin-top: 40px;
   }
+}
+
+.company-back{
+    display:block;
+    width:fit-content;
+    margin:70px -10px 0 auto;
 }
