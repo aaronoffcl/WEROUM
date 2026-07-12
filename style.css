@@ -2053,3 +2053,210 @@ body {
     font-size: 24px;
   }
 }
+
+/* ========================================
+   UPGRADE BANNER
+======================================== */
+
+.upgrade-banner {
+  width: 100%;
+  padding: 0 7vw;
+  background: var(--bg, #03070d);
+  border-top: 1px solid rgba(223, 255, 0, 0.22);
+  border-bottom: 1px solid rgba(223, 255, 0, 0.22);
+}
+
+.upgrade-banner-inner {
+  width: 100%;
+  max-width: 1240px;
+  min-height: 170px;
+  margin: 0 auto;
+  padding: 34px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.upgrade-copy {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.upgrade-label {
+  flex-shrink: 0;
+
+  color: #dfff00;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  writing-mode: vertical-rl;
+}
+
+.upgrade-text h2 {
+  margin: 0 0 12px;
+
+  color: #f5f5f5;
+  font-size: clamp(22px, 2.4vw, 34px);
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+.upgrade-text p {
+  max-width: 670px;
+  margin: 0;
+
+  color: rgba(245, 245, 245, 0.58);
+  font-size: 13px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+}
+
+.upgrade-button {
+  flex-shrink: 0;
+  min-width: 225px;
+  min-height: 54px;
+  padding: 0 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+
+  border: 1px solid #dfff00;
+  background: rgba(223, 255, 0, 0.04);
+  color: #dfff00;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.upgrade-button:hover {
+  background: #dfff00;
+  color: #03070d;
+  box-shadow:
+    0 0 14px rgba(223, 255, 0, 0.42),
+    0 0 30px rgba(223, 255, 0, 0.16);
+  transform: translateY(-2px);
+}
+
+.upgrade-arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.upgrade-button:hover .upgrade-arrow {
+  transform: translateX(5px);
+}
+
+/* ジャンプしたときに上部が詰まりすぎないようにする */
+#video-service {
+  scroll-margin-top: 40px;
+}
+
+@media screen and (max-width: 700px) {
+
+  .upgrade-banner {
+    padding: 0 20px;
+  }
+
+  .upgrade-banner-inner {
+    min-height: auto;
+    padding: 34px 0 38px;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 26px;
+  }
+
+  .upgrade-copy {
+    align-items: flex-start;
+    gap: 17px;
+  }
+
+  .upgrade-label {
+    margin-top: 3px;
+    font-size: 8px;
+    letter-spacing: 0.25em;
+  }
+
+  .upgrade-text h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  .upgrade-text p {
+    font-size: 11px;
+    line-height: 1.9;
+  }
+
+  .upgrade-button {
+    width: 100%;
+    min-width: 0;
+    min-height: 49px;
+    padding: 0 18px;
+
+    font-size: 11px;
+  }
+}@media screen and (max-width: 700px) {
+
+  .upgrade-banner {
+    padding: 0 20px;
+  }
+
+  .upgrade-banner-inner {
+    min-height: auto;
+    padding: 34px 0 38px;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 26px;
+  }
+
+  .upgrade-copy {
+    align-items: flex-start;
+    gap: 17px;
+  }
+
+  .upgrade-label {
+    margin-top: 3px;
+    font-size: 8px;
+    letter-spacing: 0.25em;
+  }
+
+  .upgrade-text h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  .upgrade-text p {
+    font-size: 11px;
+    line-height: 1.9;
+  }
+
+  .upgrade-button {
+    width: 100%;
+    min-width: 0;
+    min-height: 49px;
+    padding: 0 18px;
+
+    font-size: 11px;
+  }
+}
+
+#yeong-sang {
+  scroll-margin-top: 40px;
+}
+
