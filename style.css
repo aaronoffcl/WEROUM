@@ -975,10 +975,6 @@ body {
     font-size: 15px;
   }
 
-  .back-top {
-    right: 22px;
-    bottom: 30px;
-  }
 
 }
 
@@ -1723,17 +1719,7 @@ body {
     overflow-wrap: break-word !important;
   }
 
-  .back-top {
-    position: static !important;
 
-    display: block !important;
-
-    width: 100% !important;
-
-    margin-top: 38px !important;
-
-    text-align: right !important;
-  }
 }
 
 /* =====================================
@@ -2352,10 +2338,7 @@ body {
   border-bottom-color: var(--yellow);
 }
 
-.back-top{
-    display:inline-block;
-    margin-top:60px;
-}
+
 
 @media screen and (max-width: 700px) {
   .company-section {
@@ -2404,5 +2387,20 @@ body {
 .company-back{
     display:block;
     width:fit-content;
-    margin:70px -50px 0 auto;
+    margin:70px -10px 0 auto;
+}
+
+/* 通常の章 */
+.chapter > .back-top{
+    display:block;
+    width:min(100%,920px);
+    margin:55px auto 0;
+    text-align:right;
+}
+
+/* 運営についてだけ */
+.company-back{
+    display:block;
+    width:fit-content;
+    margin:60px 0 0 auto;
 }
