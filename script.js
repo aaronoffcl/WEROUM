@@ -91,7 +91,7 @@ requestAnimationFrame(() => {
 
 
 // RETURN TO COREを押したとき
-document.querySelectorAll(".back-top").forEach((button) => {
+document.querySelectorAll(".back-top, .replay-nav").forEach((button) => {
   button.addEventListener("click", (event) => {
     event.preventDefault();
 
