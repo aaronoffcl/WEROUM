@@ -2196,6 +2196,51 @@ body {
 
     font-size: 11px;
   }
+}@media screen and (max-width: 700px) {
+
+  .upgrade-banner {
+    padding: 0 20px;
+  }
+
+  .upgrade-banner-inner {
+    min-height: auto;
+    padding: 34px 0 38px;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 26px;
+  }
+
+  .upgrade-copy {
+    align-items: flex-start;
+    gap: 17px;
+  }
+
+  .upgrade-label {
+    margin-top: 3px;
+    font-size: 8px;
+    letter-spacing: 0.25em;
+  }
+
+  .upgrade-text h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  .upgrade-text p {
+    font-size: 11px;
+    line-height: 1.9;
+  }
+
+  .upgrade-button {
+    width: 100%;
+    min-width: 0;
+    min-height: 49px;
+    padding: 0 18px;
+
+    font-size: 11px;
+  }
 }
 
 #yeong-sang {
