@@ -149,3 +149,27 @@ document.querySelectorAll(".global-menu a").forEach((link) => {
   });
 
 });ß
+
+// ======================================
+// TOPだけメニューボタン表示
+// ======================================
+
+const heroSection = document.getElementById("top");
+
+window.addEventListener("scroll", () => {
+
+  const heroBottom = heroSection.offsetHeight;
+
+  if (window.scrollY > heroBottom - 120) {
+
+    menuButton.style.opacity = "0";
+    menuButton.style.pointerEvents = "none";
+
+  } else {
+
+    menuButton.style.opacity = "1";
+    menuButton.style.pointerEvents = "auto";
+
+  }
+
+});
