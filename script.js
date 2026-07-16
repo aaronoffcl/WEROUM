@@ -113,3 +113,39 @@ document.querySelectorAll(".back-top, .replay-nav").forEach((button) => {
     }, 50);
   });
 });
+
+// ======================================
+// GLOBAL MENU
+// ======================================
+
+const menuButton = document.getElementById("menu-button");
+const globalMenu = document.getElementById("global-menu");
+const menuOverlay = document.getElementById("menu-overlay");
+
+function closeMenu() {
+  globalMenu.classList.remove("open");
+  menuOverlay.classList.remove("open");
+  menuButton.setAttribute("aria-expanded", "false");
+}
+
+menuButton.addEventListener("click", () => {
+
+  const isOpen = globalMenu.classList.toggle("open");
+
+  menuOverlay.classList.toggle("open", isOpen);
+
+  menuButton.setAttribute("aria-expanded", isOpen);
+
+});
+
+menuOverlay.addEventListener("click", closeMenu);
+
+document.querySelectorAll(".global-menu a").forEach((link) => {
+
+  link.addEventListener("click", () => {
+
+    closeMenu();
+
+  });
+
+});ß
