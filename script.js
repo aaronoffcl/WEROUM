@@ -148,7 +148,7 @@ document.querySelectorAll(".global-menu a").forEach((link) => {
 
   });
 
-});ß
+});
 
 // ======================================
 // TOPだけメニューボタン表示
